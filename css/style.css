@@ -109,24 +109,31 @@ border: 2px solid white;
 /* HEADER BAR END */
 
 /* about.html Page START */
-
+ 
+.AboutMeformatting {
+  display: flex;
+  width: 50%;
+  align-items: center;
+  margin-left: 8%;
+ 
+}
 .aboutmesection {
   display: flex;
   justify-content: center;
   margin-top: 3%;
-  margin-right: 20%;
-  margin-left: 30%;
+  align-items: center;
   
 }
 
 .content {
   align-items: flex-end;
   margin-right: 40px;
-  margin-top: 130px;
-  margin-bottom: 250px;
-  border: 1px solid white;
+   
 }
-  
+
+.content img {
+  border: 1px solid white;
+}  
 .resumebtn {
 border-radius: 12px;
 font-family: bodoni moda;
