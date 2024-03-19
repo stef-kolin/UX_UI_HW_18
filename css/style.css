@@ -161,115 +161,136 @@ width: 150px;
 
 /* work.html Page START */
 
-.myworksection {
- background-image: url("images\Background-image\patterned-swatch2.png");
- 
-     
+.mydivworksection {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-template-rows: 1fr;
+  grid-template-areas: "titleandcard-a titleandcard-b titleandcard-c";
+  justify-content: center;
 }
 
-.titles {
-    display: flex;
-  flex-direction: row;
-  justify-content: center;
-  margin-right: 75px;
-  margin-left: 75px;
-  height: 175px;
+.titleandcard {
+  margin-top: 3%;
+  width: 375px;
+  height: 600;
+
+
 }
 
 .title {
-    margin-top: 3%;
-  margin-inline: 50px;
-   border: 1px solid white;
-   width: 375px;
+  border: 1px solid white;
+
+}
+
+.card {
+  margin-top: 3%;
+  border: 1px solid white;
+  height: 450;
+
+}
+
+.titleandcard-a {
+  grid-area: titleandcard-a;
+
 }
 
 .title-a {
-background-color: #FC6543;  
-}
-
-.title-b {
-  background-color: #0C9C23;  
-  }
-
-  .title-c {
-    background-color: #FF47F8;  
-    } 
-
-.cards {
-    display: flex;
-  flex-direction: row;
-  justify-content: center;
-  margin-top: -45px;
-}
-.card {
-    margin-top: 3%;
-  margin-inline: 50px;
-  border: 1px solid white;
-  width: 375px;
-  height: 450px;
-
+  background-color: #FC6543;
 }
 
 .card-a {
-background-color: #FFD3C9;  
+  background-color: #FFD3C9;
+
 }
+
 .card-a-font {
   color: black;
   font-family: 'Times New Roman', Times, sans serif;
   margin-left: 10px;
 }
+
 .card-a-image {
- margin-top: 50px; 
- 
+  margin-top: 50px;
 }
 
 .card-a2-image {
   margin-left: 175px;
 }
 
+
+
+.titleandcard-b {
+  grid-area: titleandcard-b;
+  margin-left: 13%;
+}
+
+.title-b {
+  background-color: #0C9C23;
+
+}
+
 .card-b {
   background-color: #A7FFB5;
+
 }
 
 .card-b-image {
-    margin-left: 100px;
-  box-shadow: 5px 10px 8px rgba(0,0,0,0.2);
+  margin-left: 100px;
+  box-shadow: 5px 10px 8px rgba(0, 0, 0, 0.2);
 }
+
+
+.titleandcard-c {
+  grid-area: titleandcard-c;
+  margin-left: 15%;
+
+}
+
+.title-c {
+  background-color: #FF47F8;
+}
+
 .card-c {
   background-color: #FFCBFD;
+
 }
 
 .card-c-image {
-margin-left: 25px;
-box-shadow: 5px 10px 8px rgba(0,0,0,0.2);
+  margin-left: 25px;
+  box-shadow: 5px 10px 8px rgba(0, 0, 0, 0.2);
 }
 
+
+
+
 .toolkit {
-   display: flex;
+  display: flex;
   flex-direction: row;
   justify-content: center;
 
 }
+
 .kit-item {
   border: solid white;
   margin-top: 1%;
   width: 170px;
   height: 90px;
-    text-align:center;
+  text-align: center;
 }
 
 .itemtitle {
   margin-top: 5px;
 }
-.aboutitem {  
+
+.aboutitem {
   border-top-left-radius: 6px;
   border-bottom-left-radius: 6px;
   border-right: 1px;
 }
 
 .resumeitem {
- border-right: 1px;
- }
+  border-right: 1px;
+}
 
 
 
@@ -280,19 +301,35 @@ box-shadow: 5px 10px 8px rgba(0,0,0,0.2);
 }
 
 .signaturefont {
-margin-top: -20px;
+  margin-top: -20px;
 }
+
 .resume-icon {
   margin-top: -30px;
 }
+
 .businesscard-icon {
   margin-top: -25px;
 }
+
 .skills-icon {
   margin-top: -20px;
 }
+
 .kit-item a {
   text-decoration: none;
+}
+
+@media only screen and (max-width: 600) {
+  .mydivworksection {
+    grid-template-rows: auto auto auto;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "titleandcard-a"
+      "titleandcard-b"
+      "titleandcard-c"
+    ;
+  }
 }
 /* work.html Page END */
 
